@@ -1,3 +1,3 @@
 # Back-End
 
-This is the back-end repository for Use My Tech Stuff.
+This is the back-end repository for WhiteBoard.
