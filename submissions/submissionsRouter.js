@@ -17,12 +17,12 @@ router.get("/", (req, res) => {
 });
 
 router.post("/", async (req, res) => {
-  const newStu = req.body;
+  const stu = req.body;
 
-  if (newStu.studentName) {
-    db.insert(newStu)
-      .then(newStu => {
-        res.status(201).json(newStu);
+  if (stu.studentName) {
+    db.insert(stu)
+      .then(stu => {
+        res.status(201).json(stu);
       })
       .catch(err => {
         console.log(err);

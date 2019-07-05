@@ -12,9 +12,9 @@ function get() {
   return db("students");
 }
 
-function insert(tech) {
+function insert(stu) {
   return db("students")
-    .insert(tech)
+    .insert(stu)
     .returning("id")
     .then(ids => {
       return getStudentById(ids[0]);
